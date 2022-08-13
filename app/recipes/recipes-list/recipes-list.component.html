@@ -1,0 +1,25 @@
+<div class="wrapper">
+	<div class="search-box">
+		<div class="search-button">
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+		</svg>
+	</div>
+		<input type="text" class="input-search" placeholder="Search by food name">
+	</div>
+</div>
+
+<div class="main-content-image">
+	<img src="/assets/img/advert-image.png" alt="image">
+</div>
+<div class="header-text">
+	New recipes you might like
+</div>
+<section class="recipes">
+	<div class="grid grid--2-cols">
+		
+		<app-recipe-item *ngFor="let recipeEl of recipes"
+		[recipe]="recipeEl"></app-recipe-item>
+	</div>
+</section>
+

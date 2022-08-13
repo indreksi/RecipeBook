@@ -1,0 +1,13 @@
+<div class="main-content">
+	<div class="">
+		<app-recipes-list></app-recipes-list>
+	</div>
+	<div class="">
+		<app-recipe-detail
+		*ngIf="selectedRecipe; else errorText"
+		 [recipe]="selectedRecipe"></app-recipe-detail>
+		<ng-template #errorText>
+			<p>Latest recipes</p>
+		</ng-template>
+	</div>
+</div>

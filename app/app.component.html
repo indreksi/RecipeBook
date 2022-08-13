@@ -1,0 +1,13 @@
+<section class="container">
+	<div class=" grid grid--3-cols">
+		<div class="menubar">
+			<app-menubar (featureSelected)="onNavigate($event)"></app-menubar>
+		</div>
+		<div class="main-content">
+			<router-outlet></router-outlet>
+		</div>
+		<div class="sidebar">	
+		
+	</div>
+	</div>
+</section>
